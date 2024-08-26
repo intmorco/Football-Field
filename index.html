@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Field</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="field">
+        <div class="center-circle"></div>
+        <div class="penalty-area left"></div>
+        <div class="penalty-area right"></div>
+        <div class="goal-area left"></div>
+        <div class="goal-area right"></div>
+        <div class="penalty-spot left"></div>
+        <div class="penalty-spot right"></div>
+        <div class="central_line"></div>
+
+        <div class="ball" draggable="true"></div>
+    </div>
+    <div class="counter">
+        <h1 class="left">0</h1>
+        <h2>:</h2>
+        <h1 class="right">0</h1>
+    </div>
+
+
+    <audio src="/mp3/goal_sound.mp3" controls hidden></audio>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

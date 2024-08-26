@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #004400;
+  height: 800px;
+  width: 1400px;
+}
+
+.field {
+  position: relative;
+  width: 1200px;
+  height: 650px;
+  background: repeating-linear-gradient(
+      0deg,
+      #228B22 0%,
+      #228B22 8.33%,
+      #006400 8.33%,
+      #006400 16.66%
+  );
+  border: 2px solid white;
+  box-sizing: border-box;
+  /* top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+   */
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.penalty-area {
+  position: absolute;
+  width: 160px;
+  height: 320px;
+  border: 2px solid white;
+}
+
+.penalty-area.left {
+  top: 25%;
+  left: 0;
+}
+
+.penalty-area.right {
+  top: 25%;
+  right: 0;
+}
+
+.goal-area {
+  position: absolute;
+  width: 80px;
+  height: 160px;
+  border: 2px solid white;
+}
+
+.goal-area.left {
+  top: 37%;
+  left: 0;
+}
+
+.goal-area.right {
+  top: 37%;
+  right: 0;
+}
+
+.penalty-spot {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.penalty-spot.left {
+  top: 50%;
+  left: 60px;
+  margin-top: -2px;
+}
+
+.penalty-spot.right {
+  top: 50%;
+  right: 60px;
+  margin-top: -2px;
+}
+
+.central_line{
+  position: absolute;
+  width: 2px;
+  height: 650px;
+  background-color: white;
+  left: 50%;
+}
+
+.ball{
+  width: 60px;
+  height: 60px;
+  background-image: url(/img/ball.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  cursor: grab;
+
+  &:active{
+      cursor: grabbing;
+  }
+}
+
+.counter{
+  width: 180px;
+  height: 40px;
+  background-color: rgba(115, 218, 115, 0.925);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+  left: 50%;
+  gap: 50px;
+}
